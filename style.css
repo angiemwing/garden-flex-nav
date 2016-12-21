@@ -1,0 +1,277 @@
+/* =================================
+  Base Element Styles
+==================================== */
+@import url('http://fonts.googleapis.com/css?family=Lora:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+  background: rgb(249, 245, 237);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  font-size: .7em;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+  color: grey;
+  display: block;
+}
+a:hover {
+  color: darkgreen;
+}
+img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(.5);
+  border: none;
+}
+h1 {
+  margin: 0;
+}
+.wrapper, .white-wrapper {
+  width: 90%;
+  margin: auto;
+}
+.white {
+  background: white;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+/* =================================
+  Header styles
+==================================== */
+
+.head {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.nav {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.nav ul {
+  padding-top: 10px;
+  border-top: .5px solid black;
+  padding-bottom: 10px;
+}
+.logo {
+  font-size: 1em;
+  color: black;
+  background: ;
+  align-self: center;
+}
+.logo:hover {
+  color: darkgreen;
+}
+
+/* =================================
+  End of mobile header
+==================================== */
+/* =================================
+  Header media
+==================================== */
+
+@media (min-width: 796px){
+
+  .wrapper, .white-wrapper {
+    width: 80%;
+  }
+  .head {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  }
+  .nav {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    margin-right: auto;
+  }
+  .nav ul {
+    border-top: transparent;
+    margin-left: 100px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px){
+  .nav ul {
+    display: flex;
+    }
+  .nav ul {
+    margin-left: 40px;
+    }
+  .nav li {
+    margin-left: 30px;
+  }
+}
+
+/* =================================
+  featured content
+==================================== */
+
+.feature h2, p {
+  color: black;
+  font-family: 'Cardo', serif;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+.feature h2 {
+  font-size: 1.5em;
+}
+.feature-text p.italic {
+  font-style: italic;
+  font-size: .8em;
+}
+.feature {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.feature-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* =================================
+  Feature media
+==================================== */
+@media (min-width: 796px){
+  .feature h2, p {
+    color: white;
+}
+  .feature h2 {
+    font-size: 2.5em;
+}
+  .feature {
+    position: relative;
+    margin-top: 75px;
+    padding-bottom: 100px;
+  }
+  .feature-text {
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1024px){
+  .feature h2 {
+    font-size: 3em;
+}
+  .feature {
+    padding-bottom: 150px;
+  }
+}
+
+/* =================================
+  content
+==================================== */
+
+.news {
+  display: block;
+  padding-bottom: 15px;
+  background: white;
+}
+.news, .content p {
+  color: darkgreen;
+  font-size: .725em;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+.content span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  float: left;
+  margin-top: 2px;
+}
+.content p {
+  display: block;
+  margin-left: 15px;
+}
+.content h2 {
+  font-family: 'Cardo', serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1em;
+}
+.content {
+  padding-bottom: 50px;
+}
+.lists ul {
+  padding-bottom: 40px;
+}
+.white {
+  padding-top: 45px;
+}
+.dealer {
+  margin-left: auto;
+  padding-right: 0;
+}
+
+/* =================================
+  content media
+==================================== */
+
+@media (min-width: 796px){
+  .content {
+    width: 50%;
+    float: left;
+    padding-right: 125px;
+  }
+  .lists {
+    display: flex;
+    margin-top: 18px;
+  }
+  .lists ul {
+    padding-right: 30px;
+  }
+    .dealer {
+    margin-left: auto;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1024px){
+  .content {
+    padding-right: 150px;
+  }
+  .content h2 {
+    margin-bottom: 10px;
+}
+  .second {
+    margin-top: 40px;
+  }
+  .lists ul {
+    padding-right: 100px;
+  }
+  .dealer {
+    padding-right: 0;
+    margin-left: auto;
+  }
+}
